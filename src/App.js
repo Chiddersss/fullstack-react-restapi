@@ -9,10 +9,10 @@ const App = () => {
 
   return (
     <div>
-      <Login username = {setUser}/>
+      <Login newUser = {setUser}/>
       {user 
         ? 
-        <h2>Hello Welcome {user} you have looged in</h2>
+        <h2>Hello Welcome {user} you have logged in</h2>
         :
         <h2>Please Log in</h2>
       }

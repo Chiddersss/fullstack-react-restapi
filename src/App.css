@@ -1,3 +1,10 @@
+body {
+  display: flex;
+  background-color: rgb(22,22,26);
+  color: whitesmoke;
+  justify-content: center;
+}
+
 .App {
-  text-align: center;
+  align-items: center;
 }
