@@ -62,3 +62,6 @@ export const authCheck = async (jwtToken) => {
         console.log(error)
     }
 }
+
+
+// TODO: add register fetch function here
