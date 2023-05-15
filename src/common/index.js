@@ -1,7 +1,5 @@
 export const writeCookie = (key, value, days) => {
-    // key = name
-    // value = jwt_token
-    // days = when the cookie will expire 
+
     let date = new Date ()
     days = days || 365
     date.setDate(date.getDate() + days)
@@ -12,13 +10,12 @@ export const writeCookie = (key, value, days) => {
 
 }
 export const getCookie = (cookieName) => {
-    //the pattern we want to find in our cookie
-    // find the cookie with name we pass to the function
+  
     const re = new RegExp(`(?<=${cookieName}=)[^;]*`)
     console.log("regular expression")
     console.log(re)
     try {
-        let cookie = document.cookie.match(re)[0] // will raise a typeError if the cookie isn't found
+        let cookie = document.cookie.match(re)[0] 
         return cookie
     } catch (error) {
         console.log(error)
